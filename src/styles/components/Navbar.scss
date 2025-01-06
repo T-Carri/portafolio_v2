@@ -1,0 +1,105 @@
+.navbar{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 13;
+ /*   position: sticky; */
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    &.dark-theme {
+        background-color: #0000006e;
+        /* border: 1px solid #20ad138c; */
+        color: white;
+      }
+
+}
+
+
+.navbar_content{
+    margin: auto;                /* Centra el contenedor */
+    width: 80%;     
+    height: 100%;              /* Define el ancho del contenedor */
+    display: flex;                /* Activa el modelo de diseño Flexbox */
+    justify-content: space-between; 
+    align-items: center;
+}
+.config-items{
+    height: 100%; 
+    width: 20%;
+    display: flex; 
+    align-items: center;
+    flex-direction: row-reverse;
+   
+}
+
+.darkModeHandler{
+    border-radius: 50%;
+    height: 70%;
+    width: 20%;
+    background-color: aqua;
+}
+
+
+.switch {
+    --input-focus: #74f02d;
+    --font-color: #fefefe;
+    --font-color-sub: #7e7e7e;
+    --bg-color: #111;
+    --bg-color-alt: #7e7e7e;
+    --main-color: #3f3e3e;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50px;
+    height: 20px;
+  }
+  
+  .toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    transition: 0.3s;
+  }
+  
+  .slider:before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    left: -2px;
+    bottom: 2px;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 0 var(--main-color);
+    transition: 0.3s;
+  }
+  
+  .toggle:checked + .slider {
+    background-color: var(--input-focus);
+  }
+  
+  .toggle:checked + .slider:before {
+    transform: translateX(30px);
+  }

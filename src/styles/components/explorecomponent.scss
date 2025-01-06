@@ -1,0 +1,12 @@
+.welcome_explore_component{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 15px 15px;
+    &.dark-theme {
+        background-color: rgba(8, 5, 5, 0.608); 
+box-shadow: 3px rgba(52, 183, 19, 0.944);
+    }
+    /* position: absolute; */
+    
+}
