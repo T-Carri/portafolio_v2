@@ -7,6 +7,14 @@
         background-color: rgba(8, 5, 5, 0.608); 
 box-shadow: 3px rgba(52, 183, 19, 0.944);
     }
+    display: grid;
+    grid-template-rows: 40% 60%;
     /* position: absolute; */
     
+}
+
+.space_one{
+    opacity: 6%;
+    background-size: cover; 
+ 
 }
