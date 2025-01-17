@@ -7,14 +7,32 @@
         background-color: rgba(8, 5, 5, 0.608); 
 box-shadow: 3px rgba(52, 183, 19, 0.944);
     }
-    display: grid;
-    grid-template-rows: 40% 60%;
+    display: flex;
+    flex-direction: column;
+   /*  grid-template-rows: 50% 50%; */
     /* position: absolute; */
-    
+    position: relative;
 }
 
-.space_one{
-    opacity: 6%;
-    background-size: cover; 
+.space_one {
+    /* Ensure the mask overlays properly */
+     background-size: cover; 
+    background-position: center; 
+    object-fit:cover;
+    height: 50%;
+    width: 100%;
+    opacity: .1;
  
-}
+    
+  }
+  
+  .explore_card{
+    position: absolute;
+     /* Sigue siendo absoluto si lo necesitas */
+    width: 100%;         /* Ajusta el ancho según sea necesario */
+    top: 50%;           /* Centra verticalmente */
+    left: 50%;          /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+   background-color: black;
+  }
+ 
