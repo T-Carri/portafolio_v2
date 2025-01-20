@@ -29,10 +29,49 @@ box-shadow: 3px rgba(52, 183, 19, 0.944);
   .explore_card{
     position: absolute;
      /* Sigue siendo absoluto si lo necesitas */
-    width: 100%;         /* Ajusta el ancho según sea necesario */
+    width: 90%;   
+    height: 90%;      /* Ajusta el ancho según sea necesario */
     top: 50%;           /* Centra verticalmente */
-    left: 50%;          /* Centra horizontalmente */
+    left: 45%;          /* Centra horizontalmente */
     transform: translate(-50%, -50%);
-   background-color: black;
+   
+   display: grid;
+   grid-template-columns: 35% 75%;
+  }
+
+
+  @media screen and (max-height: 797px){
+    .explore_card{ 
+        top: 35%;       
+    left: 45%;       
+    transform: translate(-50%, -50%);
+    height: 65%; }
+  }
+
+  .explore_card_img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+   
+    display: flex;
+    justify-content: center;
+  }
+  .explore_card_img img{
+    object-fit:cover; 
+  }
+
+  .explore_card_info{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+    display: grid;
+    grid-template-rows: 1fr 30px 1fr;
+  }
+ 
+  .data_card{
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    background-color: black;
   }
  
